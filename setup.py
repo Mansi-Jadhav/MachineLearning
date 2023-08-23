@@ -31,7 +31,8 @@ install_requires=get_requirements('requirements.txt')
 
 )
 
-#install_requires = ['numpy', 'pandas', 'seaborn', 'matplotlib']
+#install_requires = ['numpy', 'pandas', 'seaborn']
 # find_packages() will check which folder has __init__.py file and consider that as a package
 # -e . in requirements.txt makes sure it directly triggers setup.py everytime we try to install packages from requirements.txt
+# When we run pip install requirements.txt, automatically setup.py will run and package will be built
 # 

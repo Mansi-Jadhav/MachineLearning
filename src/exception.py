@@ -3,7 +3,7 @@
 # Exception handling - https://docs.python.org/3/tutorial/errors.html
 
 import sys
-import logging
+from src.logger import logging
 
 def error_message_detail(error, error_detail:sys):   # We can get error detail from sys module
     _,_,exc_tb = error_detail.exc_info()  # This returns 3 variables, we need the 3rd one - error traceback
@@ -25,5 +25,5 @@ class CustomException(Exception):    # Inherits parent Exception class
 #    try:
 #        a=1/0
 #    except Exception as e:
-#        logging.info("Logging has started")
+#        logging.info("Divide by Zero")
 #        raise CustomException(e,sys)
